@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+{% load i18n %}
+{% block title %}{% trans 'Invite A Friend' %}{% endblock %}
+{% block head %}{% trans 'Invite A Friend' %}{% endblock %}
+{% block content %}
+{% trans 'Enter your friend name and email below, and click "send invite" to invite your friend to join the site:' %}
+<form method="post" action=".">
+	{% csrf_token %}
+	{{ form.as_p }}
+	<input type="submit" value="{% trans 'send invite' %}" />
+</form>
+{% endblock %}

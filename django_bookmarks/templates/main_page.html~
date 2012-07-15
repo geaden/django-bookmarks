@@ -1,0 +1,15 @@
+
+{% extends "base.html" %}
+
+{% block title %}{{ head_title }}{% endblock %}
+  {% block head %}{{ page_title }}{% endblock %}
+  {% block content %}
+  {% if user.username %}
+  <p>Welcome {{ user.username }}!
+  {{ page_body }}</p>
+  {% else %}
+  <p>Welcome anonymous user!
+  You need to <a href="/login/">login</a>
+  before you can store and share bookmarks.</p>
+  {% endif %}
+  {% endblock %}

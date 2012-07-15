@@ -1,0 +1,131 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2012-07-14 13:09+0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
+"%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2)\n"
+
+#: bookmarks/forms.py:51
+msgid "Friend's Name"
+msgstr "Имя друга"
+
+#: bookmarks/forms.py:52
+msgid "Friend's Email"
+msgstr "Адрес электронной почты друга"
+
+#: bookmarks/views.py:315
+#, python-format
+msgid "An invitation was sent to %s."
+msgstr "Приглашение было отправлено на %s."
+
+#: bookmarks/views.py:317
+msgid "There was an error while sending the invitation."
+msgstr "Возникла ошибка при отправке приглашения."
+
+#: django_bookmarks/templates/base.html:43
+msgid "Change language"
+msgstr "Изменить язык"
+
+#: django_bookmarks/templates/friend_invite.html:3
+#: django_bookmarks/templates/friend_invite.html:4
+msgid "Invite A Friend"
+msgstr "Пригласить друга"
+
+#: django_bookmarks/templates/friend_invite.html:6
+msgid ""
+"Enter your friend name and email below, and click \"send invite\" to invite "
+"your friend to join the site:"
+msgstr ""
+"Введите имя Вашего друга и адрес его электронной почты ниже, и нажмите "
+"\"Отправить приглашение\", чтобы пригласить Вашего друга присоединиться к "
+"сайту:"
+
+#: django_bookmarks/templates/friend_invite.html:10
+msgid "send invite"
+msgstr "Отправить приглашение"
+
+#: django_bookmarks/templates/admin/base_site.html:4
+msgid "Django Bookmarks site admin"
+msgstr ""
+
+#: django_bookmarks/templates/admin/base_site.html:7
+msgid "Django Bookmarks administration"
+msgstr ""
+
+#: django_bookmarks/templates/admin/change_form.html:21
+#: django_bookmarks/templates/admin/change_list.html:43
+#: django_bookmarks/templates/admin/delete_confirmation.html:8
+msgid "Home"
+msgstr ""
+
+#: django_bookmarks/templates/admin/change_form.html:24
+msgid "Add"
+msgstr ""
+
+#: django_bookmarks/templates/admin/change_form.html:34
+msgid "History"
+msgstr ""
+
+#: django_bookmarks/templates/admin/change_form.html:35
+msgid "View on site"
+msgstr ""
+
+#: django_bookmarks/templates/admin/change_form.html:46
+#: django_bookmarks/templates/admin/change_list.html:69
+msgid "Please correct the error below."
+msgid_plural "Please correct the errors below."
+msgstr[0] ""
+msgstr[1] ""
+
+#: django_bookmarks/templates/admin/change_list.html:60
+#, python-format
+msgid "Add %(name)s"
+msgstr ""
+
+#: django_bookmarks/templates/admin/change_list.html:80
+msgid "Filter"
+msgstr ""
+
+#: django_bookmarks/templates/admin/delete_confirmation.html:12
+msgid "Delete"
+msgstr ""
+
+#: django_bookmarks/templates/admin/delete_confirmation.html:19
+#, python-format
+msgid ""
+"Deleting the %(object_name)s '%(escaped_object)s' would result in deleting "
+"related objects, but your account doesn't have permission to delete the "
+"following types of objects:"
+msgstr ""
+
+#: django_bookmarks/templates/admin/delete_confirmation.html:27
+#, python-format
+msgid ""
+"Deleting the %(object_name)s '%(escaped_object)s' would require deleting the "
+"following protected related objects:"
+msgstr ""
+
+#: django_bookmarks/templates/admin/delete_confirmation.html:35
+#, python-format
+msgid ""
+"Are you sure you want to delete the %(object_name)s \"%(escaped_object)s\"? "
+"All of the following related items will be deleted:"
+msgstr ""
+
+#: django_bookmarks/templates/admin/delete_confirmation.html:40
+msgid "Yes, I'm sure"
+msgstr ""

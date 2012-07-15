@@ -1,0 +1,16 @@
+{% if user.is_authenticated %}
+<form action="/comments/post/" method="post">
+{% csrf_token %}
+<p><label>Post a comment:</label><br />
+<textarea name="comment" rows="10" cols="60"></textarea></p>
+<input type="hidden" name="options" value="{{ options }}" />
+<input type="hidden" name="target" value="{{ target }}" />
+<input type="hidden" name="gonzo" value="{{ hash }}" />
+<input type="submit" name="post" value="submit a comment" />
+{% for hidden in form.hidden_fields %}
+    {{ hidden }}
+{% endfor %}
+</form>
+{% else %}
+<p>Please <a href="/login/">login</a> to post comments.</p>
+{% endif %}

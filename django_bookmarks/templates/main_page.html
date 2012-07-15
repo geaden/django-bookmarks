@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+{% load bookmark_filter %}
+
+{% block title %}{{ head_title }}{% endblock %}
+  {% block head %}{{ page_title }}{% endblock %}
+  {% block external %}
+  <link rel="alternate" type="application/rss+xml" title="Django Bookmarks | Recent Bookmarks" href="/feeds/recent/" />
+  {% endblock %}
+  {% block content %}
+  {% if user.username %}
+  <p>Welcome {{ user.username|capitalize }}!
+  {{ page_body }}</p>
+  {% else %}
+  <p>Welcome anonymous user!
+  You need to <a href="/login/">login</a>
+  before you can store and share bookmarks.</p>
+  {% endif %}
+   <h2>Bookmarks Shared by Users</h2>
+   {% include "shared_bookmark_list.html" %}
+  {% endblock %}
