@@ -11,7 +11,7 @@ DEFAULT_FROM_EMAIL = 'Django Bookmarks <denisovgena@mail.ru>'
 EMAIL_HOST = 'smtp.mail.ru'
 EMAIL_PORT = ''
 EMAIL_HOST_USER = 'denisovgena@mail.ru'
-EMAIL_HOST_PASSWORD = 'sFrancis'
+EMAIL_HOST_PASSWORD = ''
 
 ADMINS = (
     # ('Your Name', 'your_email@example.com'),
