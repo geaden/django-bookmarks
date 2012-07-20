@@ -25,7 +25,7 @@ class ViewTest(TestCase):
 	# 	self.assertEqual(response.status_code, 302)
 
 	def test_bookmark_save(self):
-		response = self.client.login('/save/', 'geaden', 'sFrancis')
+		response = self.client.login('/save/', 'geaden', '')
 		self.assertTrue(response)
 		data = {
 			'url': 'http://www.example.com/',
