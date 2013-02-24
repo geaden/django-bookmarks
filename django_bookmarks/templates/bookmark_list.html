@@ -30,12 +30,12 @@
   {% if show_paginator %}
   <div class="paginator">
     {% if has_prev %}
-    <a href="/user/{{ user.username }}/?page={{ prev_page }}">&laquo; Previous</a>
+    <a href="/user/{{ user.username }}/?page={{ prev_page }}">&laquo; Предыдущая</a>
   {% endif %}
   {% if has_next %}
-    <a href="/user/{{ user.username }}/?page={{ next_page }}">Next &raquo;</a>
+    <a href="/user/{{ user.username }}/?page={{ next_page }}">Следующая &raquo;</a>
   {% endif %}
-  (Page {{ page }} of {{ pages }})
+  (Страница {{ page }} из {{ pages }})
   </div>
   {% endif %}
 {% else %}
